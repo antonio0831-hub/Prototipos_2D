@@ -3,19 +3,19 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public float velocidad = 5f;
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rb;
+    private Vector2 posicion;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        float horizontal = Input.GetAxis("horizontal");
-        float vertical = Input.GetAxis("Vertical");
-        transform.position = new Vector2(horizontal,vertical);
+        posicion = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        rb.linearVelocity = posicion * velocidad;
     }
 }
