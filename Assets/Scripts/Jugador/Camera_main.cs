@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Camera_main : MonoBehaviour
 {
-    public Transform jugador; 
+    [SerializeField] private Transform jugador; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
 

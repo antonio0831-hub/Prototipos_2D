@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
 {
-    public float velocidad = 5f;
+    [SerializeField] private float velocidad = 5f;
     private Rigidbody2D rb;
     private Vector2 posicion;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -16,6 +16,9 @@ public class Player_Movement : MonoBehaviour
     void Update()
     {
         posicion = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+    }
+    private void FixedUpdate()
+    {
         rb.linearVelocity = posicion * velocidad;
     }
 }

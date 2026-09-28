@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class interactivos_trigger : MonoBehaviour
 {
-    public Animator activador1, activador2, activador3;
+    [SerializeField] private Animator activador1, activador2, activador3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void OnTriggerEnter2D(Collider2D other)
     {
