@@ -6,7 +6,7 @@ public class CameraMain : MonoBehaviour
 {
     [SerializeField] private Transform jugador; 
     [SerializeField] private KeyCode tecla;
-    [SerializeField] private float rotacion_x, rotacion_y, rotacion_z;
+    private float rotacion_x, rotacion_y;
     [SerializeField] private float sensibilidad;
     void LateUpdate()
     {

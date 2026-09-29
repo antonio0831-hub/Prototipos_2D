@@ -933,6 +933,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Camera_main
   jugador: {fileID: 1844400300}
+  tecla: 324
+  sensibilidad: 2
 --- !u!4 &1844400300 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6203049912105677268, guid: e1a2fb72750418741aff0983816aff13, type: 3}
