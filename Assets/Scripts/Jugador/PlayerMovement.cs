@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player_Movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float velocidad = 5f;
     private Rigidbody2D rb;

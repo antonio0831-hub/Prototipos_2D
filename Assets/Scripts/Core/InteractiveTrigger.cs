@@ -1,7 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class interactivos_trigger : MonoBehaviour
+public class InteractiveTrigger : MonoBehaviour
 {
     [SerializeField] private Animator activador1, activador2, activador3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
