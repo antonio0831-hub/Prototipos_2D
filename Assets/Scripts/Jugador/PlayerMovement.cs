@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float velocidad = 5f;
+    [SerializeField] private float velocity = 5f;
     private Rigidbody2D rb;
-    private Vector2 posicion;
+    private Vector2 playerPosition;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,10 +15,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        posicion = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        playerPosition = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
     }
     private void FixedUpdate()
     {
-        rb.linearVelocity = posicion * velocidad;
+        rb.linearVelocity = playerPosition * velocity;
     }
 }
