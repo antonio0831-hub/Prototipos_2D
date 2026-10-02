@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerPosition = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        playerPosition = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
     }
     private void FixedUpdate()
     {
