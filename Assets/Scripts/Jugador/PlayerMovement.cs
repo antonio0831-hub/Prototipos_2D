@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         playerPosition = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        playerPosition = transform.TransformDirection(playerPosition);
     }
     private void FixedUpdate()
     {
